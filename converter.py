@@ -5,7 +5,7 @@ if len(sys.argv) != 2:
     print('Please provide the csv file in the command line.')
     exit()
 
-with open('apontmes.csv') as csv_file:
+with open(sys.argv[1]) as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=',')
     line_count = 0
 
