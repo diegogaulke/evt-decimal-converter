@@ -28,3 +28,5 @@ with open(sys.argv[1]) as csv_file:
         day_total_tmp += round(float(time_splitted[0]) + (float(time_splitted[1]) / 60), 2)
 
         line_count += 1
+    
+    print('%s - %s' % (day_label_tmp, day_total_tmp))
